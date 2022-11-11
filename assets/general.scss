@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600,700&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.custom-input-col {
+  .v-input__control {
+    position: relative;
+
+    .v-input__slot {
+      margin-bottom: 16px;
+    }
+
+    .v-text-field__details {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+
+      .v-messages {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+.v-btn {
+  font-weight: $font-weight-semibold !important;
+  height: $button-height;
+  letter-spacing: -$letter-spacing-primary !important;
+  text-transform: none;
+
+  .v-btn__content {
+    text-transform: none;
+  }
+}
+
+.v-text-field--filled > .v-input__control > .v-input__slot,
+.v-text-field--full-width > .v-input__control > .v-input__slot,
+.v-text-field--outlined > .v-input__control > .v-input__slot {
+  min-height: 34px !important;
+
+  input {
+    padding: 0 !important;
+  }
+}
+
+.v-text-field--outlined .v-label {
+  font-size: $font-size-primary;
+  top: 8px !important;
+}
+
+.v-input {
+  &:not(.error--text) {
+    .v-input__control .v-input__slot fieldset {
+      border-color: $input-color !important;
+    }
+  }
+
+  &.v-input--is-focused {
+    .v-input__control .v-input__slot fieldset {
+      border-color: $primary-color !important;
+    }
+  }
+}

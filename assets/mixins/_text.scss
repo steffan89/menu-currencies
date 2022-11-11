@@ -1,0 +1,7 @@
+@mixin basic-text($fontWeight, $fontSize, $letterSpacing) {
+  color: $text-color;
+  font-weight: $fontWeight;
+  font-size: $font-size-primary;
+  line-height: $primary-line-height;
+  letter-spacing: $letterSpacing;
+}
